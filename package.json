@@ -1,0 +1,53 @@
+{
+  "name": "scriby",
+  "version": "0.0.0",
+  "description": "Scriby Generates Bare-Bones Single Page Documentation.",
+  "license": "MIT",
+  "author": "Danny Fritz",
+
+  "people": [
+    {
+      "name": "Danny Fritz",
+      "email": "dannyfritz@gmail.com",
+      "url": "http://dannyfritz.com/"
+    }
+  ],
+  "homepage": "http://github.com/dannyfritz/scriby.git",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dannyfritz/scriby"
+  },
+  "keywords": ["documentation", "docs", "apidocs", "jsdoc", "javadoc", "yuidoc"],
+  "bugs": {
+    "url": "https://github.com/dannyfritz/scriby/issues",
+    "email": "dannyfritz@gmail.com"
+  },
+
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "./lib",
+    "./bin"
+  ],
+  "bin": "./lib/cli.js",
+  "directories": {
+    "lib": "lib",
+    "bin": "bin",
+    "doc": "docs"
+  },
+
+  "scripts": {
+    "test": "mocha --reporter spec -u qunit"
+  },
+  "dependencies": {
+    "optimist": "^0.6.1",
+    "lodash": "^2.4.1",
+    "handlebars": "^2.0.0-alpha.2",
+    "yuidocjs": "^0.3.49",
+    "marked": "^0.3.2"
+  },
+  "devDependencies": {
+    "mocha": "^1.18.0",
+    "grunt": "^0.4.4"
+  }
+}
