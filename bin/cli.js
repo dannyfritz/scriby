@@ -36,7 +36,7 @@ var argv = require('optimist');
 	@module Scriby
 */
 
-var argv = argv
+argv = argv
 	.usage('Usage: $0 <space separated files and directories>')
 	.alias('o', 'output')
 	.describe('o', 'output directory')
