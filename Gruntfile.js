@@ -27,11 +27,31 @@ module.exports = function(grunt) {
 		},
 
 		watch: {
+			options: {
+				livereload: true
+			},
 			scripts: {
 				files: ['lib/**.js', 'bin/**.js', 'test/**/*.js', 'index.js'],
 				tasks: ['test'],
 				options: {
 					interrupt: true
+				}
+			}
+		},
+
+		connect: {
+			docs: {
+				options: {
+					keepalive: true,
+					base: 'docs',
+					livereload: true
+				}
+			},
+			test: {
+				options: {
+					keepalive: true,
+					base: 'test/docs',
+					livereload: true
 				}
 			}
 		}
@@ -41,6 +61,7 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-mocha-test');
 	grunt.loadNpmTasks('grunt-eslint');
 	grunt.loadNpmTasks('grunt-contrib-watch');
+	grunt.loadNpmTasks('grunt-contrib-connect');
 
 	grunt.registerTask('test', ['eslint', 'mochaTest']);
 	grunt.registerTask('build', ['test', build]);
