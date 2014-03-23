@@ -48,7 +48,9 @@
     "lodash": "^2.4.1",
     "handlebars": "^2.0.0-alpha.2",
     "yuidocjs": "^0.3.49",
-    "marked": "^0.3.2"
+    "marked": "^0.3.2",
+    "file": "^0.2.2",
+    "node-serialize": "0.0.3"
   },
   "devDependencies": {
     "mocha": "^1.18.0",

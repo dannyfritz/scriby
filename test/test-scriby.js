@@ -5,16 +5,16 @@ var _ = require('lodash');
 suite('Scriby');
 
 var testOptions = {
-	sources: ['./test/src'],
-	output: './test/docs'
+	sources: ['test/lib/'],
+	output: 'test/docs/'
 }
 
 test('defaults', function() {
 	var scriby = new Scriby();
 	assert.deepEqual(
 		scriby.options, {
-			sources: ['./src'],
-			output: 'docs'
+			sources: ['lib/'],
+			output: 'docs/'
 		}
 	);
 });
@@ -22,5 +22,14 @@ test('defaults', function() {
 test('parse', function() {
 	var scriby = new Scriby(testOptions);
 	var json = scriby.parse();
-	console.log(json);
+});
+
+test('generateDocs', function() {
+	var scriby = new Scriby(testOptions);
+	scriby.generateDocuments();
+});
+
+test('generateDocs Scriby', function() {
+	var scriby = new Scriby({sources: ['lib/'], output: 'docs/'});
+	scriby.generateDocuments();
 });

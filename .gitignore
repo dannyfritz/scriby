@@ -27,3 +27,5 @@ node_modules
 # Bower Dependencies
 bower_components
 *.sublime-workspace
+
+test/docs
