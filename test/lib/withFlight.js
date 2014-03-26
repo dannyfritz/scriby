@@ -6,9 +6,16 @@
 */
 
 /**
-		flight method.
+	flight method.
 
-		@method flight
-		@async
-		@chainable
-	*/
+	@method flight
+	@async
+	@chainable
+*/
+
+/**
+	flight event
+
+	@event flown
+	@bubbles bubble
+*/
