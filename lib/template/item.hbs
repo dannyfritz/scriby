@@ -4,6 +4,9 @@
 	</div>
 	<div class="scriby-item-file">{{file}}:{{line}}</div>
 	<div class="scriby-item-since">{{since}}</div>
+	{{#if beta}}
+	<div class="scriby-item-beta">beta</div>
+	{{/if}}
 	<div class="scriby-item-itemtype">{{itemtype}}</div>
 	<div class="scriby-item-private">{{access}}</div>
 	{{#if final}}

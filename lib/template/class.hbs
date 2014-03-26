@@ -17,8 +17,20 @@
 	{{/each}}
 	</div>
 	<div class="scriby-class-items">
-		{{#each items}}
+		<div class="scriby-class-properties">
+		{{#each items.property}}
 			{{>item}}
 		{{/each}}
+		</div>
+		<div class="scriby-class-methods">
+		{{#each items.method}}
+			{{>item}}
+		{{/each}}
+		</div>
+		<div class="scriby-class-events">
+		{{#each items.event}}
+			{{>item}}
+		{{/each}}
+		</div>
 	</div>
 </div>

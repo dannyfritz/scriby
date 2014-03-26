@@ -35,6 +35,7 @@
 		A method.
 
 		@method addMethod
+		@beta
 		@param number1 {Number}
 		@param number2 {Number}
 		@return {Number} The addition of the 2 numbers.
