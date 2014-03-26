@@ -1,0 +1,24 @@
+<div class="scriby-class class-{{name}}">
+	<div class="scriby-class-title">
+		<h2>{{name}}</h2>
+	</div>
+	<div class="scriby-class-file">{{file}}:{{line}}</div>
+
+	<div class="scriby-class-namespace">{{namespace}}</div>
+	<div class="scriby-class-static">{{static}}</div>
+	<div class="scriby-class-description">{{description}}</div>
+	<div class="scriby-class-params">
+		{{#each params}}
+			<div class="scriby-param">
+				<div class="scriby-param-name">{{name}}</div>
+				<div class="scriby-param-type">{{type}}</div>
+				<div class="scriby-param-description">{{description}}</div>
+			</div>
+		{{/each}}
+	</div>
+	<div class="scriby-class-items">
+		{{#each items}}
+			{{>item}}
+		{{/each}}
+	</div>
+</div>

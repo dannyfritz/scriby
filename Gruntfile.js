@@ -14,7 +14,13 @@ module.exports = function(grunt) {
 			options: {
 				config: '.eslintrc'
 			},
-			target: ['./bin/**.js', './lib/**.js', 'index.js', 'Gruntfile.js']
+			target: ['bin/**.js', 'lib/**.js', 'index.js', 'Gruntfile.js']
+		},
+
+		csslint: {
+			options: {
+				csslintrc: '.csslintrc'
+			}
 		},
 
 		mochaTest: {
@@ -31,10 +37,11 @@ module.exports = function(grunt) {
 				livereload: true
 			},
 			scripts: {
-				files: ['lib/**.js', 'bin/**.js', 'test/**/*.js', 'index.js'],
+				files: ['lib/**/*', 'bin/**/*', 'test/**/*.js', 'index.js'],
 				tasks: ['test'],
 				options: {
-					interrupt: true
+					interrupt: true,
+					livereload: true
 				}
 			}
 		},
@@ -58,12 +65,13 @@ module.exports = function(grunt) {
 
 	});
 
-	grunt.loadNpmTasks('grunt-mocha-test');
 	grunt.loadNpmTasks('grunt-eslint');
+	grunt.loadNpmTasks('grunt-contrib-csslint');
+	grunt.loadNpmTasks('grunt-mocha-test');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-contrib-connect');
 
-	grunt.registerTask('test', ['eslint', 'mochaTest']);
+	grunt.registerTask('test', ['eslint', 'csslint', 'mochaTest']);
 	grunt.registerTask('build', ['test', build]);
 	grunt.registerTask('default', ['test']);
 

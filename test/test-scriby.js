@@ -14,7 +14,8 @@ test('defaults', function() {
 	assert.deepEqual(
 		scriby.options, {
 			sources: ['lib/'],
-			output: 'docs/'
+			output: 'docs/',
+			template: null
 		}
 	);
 });

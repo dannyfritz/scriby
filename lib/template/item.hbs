@@ -1,0 +1,31 @@
+<div class="scriby-item item-{{name}}">
+	<div class="scriby-item-title">
+		<h3>{{name}}</h3>
+	</div>
+	<div class="scriby-item-file">{{file}}:{{line}}</div>
+	<div class="scriby-item-since">{{since}}</div>
+	<div class="scriby-item-private">{{access}}</div>
+	<div class="scriby-item-final">{{final}}</div>
+	<div class="scriby-item-bubbles">{{bubbles}}</div>
+	<div class="scriby-item-async">{{async}}</div>
+	<div class="scriby-item-chainable">{{chainable}}</div>
+	<div class="scriby-item-type">{{type}}</div>
+	<div class="scriby-item-default">{{default}}</div>
+	<div class="scriby-item-description">{{description}}</div>
+	<div class="scriby-item-itemtype">{{itemtype}}</div>
+	<div class="scriby-item-params">
+		{{#each params}}
+			<div class="scriby-param">
+				<div class="scriby-param-name">{{name}}</div>
+				<div class="scriby-param-type">{{type}}</div>
+				<div class="scriby-param-description">{{description}}</div>
+			</div>
+		{{/each}}
+	</div>
+	<div class="scriby-item-return">
+	{{#with return}}
+		<div class="scriby-return-type">{{type}}</div>
+		<div class="scriby-return-description">{{description}}</div>
+	{{/with}}
+	</div>
+</div>
