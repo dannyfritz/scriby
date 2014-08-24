@@ -30,7 +30,7 @@ test('generateDocs', function() {
 	scriby.generateDocuments();
 });
 
-// test('generateDocs Scriby', function() {
-// 	var scriby = new Scriby({sources: ['lib/'], output: 'docs/'});
-// 	scriby.generateDocuments();
-// });
+test('generateDocs Scriby', function() {
+	var scriby = new Scriby({sources: ['lib/'], output: 'docs/'});
+	scriby.generateDocuments();
+});

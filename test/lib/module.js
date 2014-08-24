@@ -1,76 +1,76 @@
 /**
-	This is a __module__ description.
+This is a __module__ description.
 
-	@module testModule
+@module testModule
 */
 
 /**
-	A class.
+A class.
 
-	@class testClass
-	@constructor
-	@param options {Object} The options object
+@class testClass
+@constructor
+@param options {Object} The options object
 */
 
 	/**
-		@since 2.0
-		A property.
+	@since 2.0
+	A property.
 
-		@property testProperty
-		@type String
-		@default "Test Default"
+	@property testProperty
+	@type String
+	@default "Test Default"
 	*/
 
 	/**
-		@deprecated Use `testProperty`
-		Another property.
+	@deprecated Use `testProperty`
+	Another property.
 
-		@property anotherProperty
-		@type Number
-		@final
-		@default 1337
+	@property anotherProperty
+	@type Number
+	@final
+	@default 1337
 	*/
 
 	/**
-		A method.
+	A method.
 
-		@method addMethod
-		@beta
-		@param number1 {Number}
-		@param number2 {Number}
-		@return {Number} The addition of the 2 numbers.
+	@method addMethod
+	@beta
+	@param number1 {Number}
+	@param number2 {Number}
+	@return {Number} The addition of the 2 numbers.
 
-		@example
-				addMethod(1, 2) // => 3
+	@example
+	addMethod(1, 2) // => 3
 	*/
 
 	/**
-		An event.
+	An event.
 
-		@event testEvent
-		@bubbles
-		@param number1 {Number}
-		@param number2 {Number}
-		@return {Number} The addition of the 2 numbers.
+	@event testEvent
+	@bubbles
+	@param number1 {Number}
+	@param number2 {Number}
+	@return {Number} The addition of the 2 numbers.
 	*/
 
 /**
-	A class.
+A class.
 
-	@class secondClass
-	@uses withFlight
-	@static
-	@param options {Object} The options object
-	@param [numbers]* {Object} Numbers!
+@class secondClass
+@uses withFlight
+@static
+@param options {Object} The options object
+@param [numbers]* {Object} Numbers!
 */
 
 	/**
-		Private method.
+	Private method.
 
-		@method privateMethod
-		@async
-		@chainable
-		@private
-		@return {Object} Private stuff.
+	@method privateMethod
+	@async
+	@chainable
+	@private
+	@return {Object} Private stuff.
 	*/
 

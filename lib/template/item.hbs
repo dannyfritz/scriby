@@ -1,4 +1,4 @@
-<div class="scriby-item scriby-{{itemtype}} item-{{name}}">
+<div class="scriby-item scriby-{{itemtype}}" id="item-{{name}}">
 	<div class="scriby-item-title">
 		<h3>{{name}}</h3>
 	</div>
@@ -32,5 +32,8 @@
 		<div class="scriby-return-type">{{type}}</div>
 		<div class="scriby-return-description">{{description}}</div>
 	{{/with}}
+	{{#each example}}
+	<pre class="scriby-item-example">{{this}}</pre>
+	{{/each}}
 	</div>
 </div>

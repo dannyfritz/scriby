@@ -1,0 +1,23 @@
+<nav>
+	<ul>
+	{{#each modules}}
+		<li><a href="#module-{{name}}">{{name}}</a></li>
+		<ul>
+		{{#each classes}}
+			<li><a href="#class-{{name}}">{{name}}</a></li>
+			<ul>
+			{{#each items.property}}
+				<li><a href="#item-{{name}}">{{name}}</a></li>
+			{{/each}}
+			{{#each items.method}}
+				<li><a href="#item-{{name}}">{{name}}</a></li>
+			{{/each}}
+			{{#each items.event}}
+				<li><a href="#item-{{name}}">{{name}}</a></li>
+			{{/each}}
+			</ul>
+		{{/each}}
+		</ul>
+	{{/each}}
+	</ul>
+</nav>
