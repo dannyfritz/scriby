@@ -1,7 +1,7 @@
 {
   "name": "scriby",
   "version": "0.0.2",
-  "description": "Scriby Generates Bare-Bones Single Page Documentation with YUIDoc (JSDoc) Comments.",
+  "description": "Scriby Generates Bare-Bones Single Page Documentation from YUIDoc (JSDoc) Comments.",
   "license": "MIT",
   "author": "Danny Fritz",
   "people": [
@@ -19,7 +19,7 @@
     "coverage": "browserify -t coverify test/scriby-test.js --bare | node | coverify --quiet",
     "docs": "node bin/cli.js lib"
   },
-  "bin": "./lib/cli.js",
+  "bin": "./bin/cli.js",
   "homepage": "http://github.com/dannyfritz/scriby.git",
   "repository": {
     "type": "git",

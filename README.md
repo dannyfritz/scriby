@@ -1,5 +1,5 @@
 # Scriby
-Generate Single Page Documentation with YUIDoc (JSDoc) comments.
+Generate Single Page Documentation from YUIDoc (JSDoc) comments.
 
 ## JSON Data Structure:
 ```JSON
