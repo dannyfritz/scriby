@@ -1,6 +1,6 @@
 {
   "name": "scriby",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Scriby Generates Bare-Bones Single Page Documentation with YUIDoc (JSDoc) Comments.",
   "license": "MIT",
   "author": "Danny Fritz",
