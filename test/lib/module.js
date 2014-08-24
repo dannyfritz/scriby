@@ -73,4 +73,3 @@ A class.
 	@private
 	@return {Object} Private stuff.
 	*/
-

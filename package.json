@@ -11,6 +11,14 @@
       "url": "http://dannyfritz.com/"
     }
   ],
+  "scripts": {
+    "test": "npm run lint && npm run unittest && npm run coverage",
+    "build": "npm run docs",
+    "lint": "eslint lib test",
+    "unittest": "tape test/*.js | tap-spec",
+    "coverage": "browserify -t coverify test/scriby-test.js --bare | node | coverify --quiet",
+    "docs": "node bin/cli.js lib"
+  },
   "homepage": "http://github.com/dannyfritz/scriby.git",
   "repository": {
     "type": "git",
@@ -40,9 +48,6 @@
     "bin": "bin",
     "doc": "docs"
   },
-  "scripts": {
-    "test": "grunt"
-  },
   "dependencies": {
     "optimist": "^0.6.1",
     "lodash": "^2.4.1",
@@ -53,12 +58,10 @@
     "node-serialize": "0.0.3"
   },
   "devDependencies": {
-    "mocha": "^1.18.0",
-    "grunt": "^0.4.4",
-    "grunt-mocha-test": "^0.10.0",
-    "grunt-eslint": "^0.3.2",
-    "grunt-contrib-watch": "^0.6.0",
-    "grunt-contrib-connect": "^0.7.1",
-    "grunt-contrib-csslint": "^0.2.0"
+    "browserify": "^5.10.1",
+    "coverify": "^1.0.7",
+    "eslint": "^0.7.4",
+    "tap-spec": "^0.2.1",
+    "tape": "^2.14.0"
   }
 }
